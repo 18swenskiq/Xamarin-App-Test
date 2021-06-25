@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/activity_main">
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:columnCount="1"
+		android:id="@+id/gridLayout1"
+		android:layout_centerVertical="false"
+		android:layout_centerHorizontal="true">
+		<TextView
+			android:text="Search Player:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/textView1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editText1"
+            android:autoText="false"
+            android:inputType="textShortMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false" />
+        <Button
+            android:text="Search"
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:onClick="SearchPlayerName"
+            android:clickable="true"/>
+        <TextView
+            android:text="Nickname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/faceitnickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <TextView
+            android:text="PlayerId"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/faceitplayerid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/faceitavatar"
+            android:contentDescription="Faceit.com avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+        <TextView
+            android:text="Country"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/faceitcountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <TextView
+            android:text="Verified"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/faceitverified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+	</GridLayout>
+
+
+
+</RelativeLayout>
